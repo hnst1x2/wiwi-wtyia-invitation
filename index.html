@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wtyia de Wiwi &mdash; 25 Juin 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700&family=Marcellus&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lanterns" aria-hidden="true"></div>
+
+  <main class="card">
+    <svg class="corner corner-tl" viewBox="0 0 120 120" aria-hidden="true">
+      <use href="#arabesque-corner"/>
+    </svg>
+    <svg class="corner corner-tr" viewBox="0 0 120 120" aria-hidden="true">
+      <use href="#arabesque-corner"/>
+    </svg>
+    <svg class="corner corner-bl" viewBox="0 0 120 120" aria-hidden="true">
+      <use href="#arabesque-corner"/>
+    </svg>
+    <svg class="corner corner-br" viewBox="0 0 120 120" aria-hidden="true">
+      <use href="#arabesque-corner"/>
+    </svg>
+
+    <header class="intro">
+      <div class="crescent" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 4a28 28 0 1 0 20 49 22 22 0 1 1 0-42A28 28 0 0 0 40 4z"/>
+          <circle cx="56" cy="14" r="2"/>
+        </svg>
+      </div>
+
+      <p class="eyebrow">&bull; Invitation &bull;</p>
+      <p class="arabic-eyebrow" lang="ar" dir="rtl">&#1608;&#1591;&#1610;&#1617;&#1577;</p>
+
+      <h1 class="title">Wtyia</h1>
+      <p class="subtitle">de Wiwi</p>
+
+      <div class="ornament" aria-hidden="true">
+        <span class="line"></span>
+        <svg viewBox="0 0 32 32"><path d="M16 2l3 10 11 1-9 7 3 10-8-6-8 6 3-10-9-7 11-1z"/></svg>
+        <span class="line"></span>
+      </div>
+
+      <p class="date-line">Jeudi 25 Juin 2026</p>
+      <p class="time-line">&agrave; partir de 19h00</p>
+    </header>
+
+    <section class="countdown" aria-live="polite">
+      <div class="unit">
+        <span class="value" id="days">--</span>
+        <span class="label">Jours</span>
+      </div>
+      <div class="unit">
+        <span class="value" id="hours">--</span>
+        <span class="label">Heures</span>
+      </div>
+      <div class="unit">
+        <span class="value" id="minutes">--</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="unit">
+        <span class="value" id="seconds">--</span>
+        <span class="label">Secondes</span>
+      </div>
+    </section>
+
+    <div class="ornament" aria-hidden="true">
+      <span class="line"></span>
+      <svg viewBox="0 0 32 32"><path d="M16 2l3 10 11 1-9 7 3 10-8-6-8 6 3-10-9-7 11-1z"/></svg>
+      <span class="line"></span>
+    </div>
+
+    <p class="blessing" lang="ar" dir="rtl">&#1605;&#1576;&#1585;&#1608;&#1603; &#1573;&#1606; &#1588;&#1575;&#1569; &#1575;&#1604;&#1604;&#1607;</p>
+    <p class="blessing-fr">&laquo; Le henn&eacute; sur les mains, l'amour dans le c&oelig;ur. &raquo;</p>
+
+    <a class="venue" href="https://maps.google.com" target="_blank" rel="noopener">
+      <svg class="venue-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2C7.6 2 4 5.6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg>
+      <span>Tunis, Tunisie</span>
+    </a>
+  </main>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="arabesque-corner" viewBox="0 0 120 120">
+        <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+          <path d="M2 2 L60 2 M2 2 L2 60"/>
+          <path d="M2 14 L48 14 M14 2 L14 48"/>
+          <path d="M14 14 Q40 14 40 40 Q14 40 14 14 Z"/>
+          <circle cx="40" cy="40" r="6"/>
+          <path d="M40 14 Q60 14 60 34 M14 40 Q14 60 34 60"/>
+          <circle cx="60" cy="34" r="3"/>
+          <circle cx="34" cy="60" r="3"/>
+          <path d="M60 50 Q72 50 72 62 Q60 62 60 50 Z"/>
+          <path d="M50 60 Q50 72 62 72 Q62 60 50 60 Z"/>
+          <circle cx="72" cy="72" r="2"/>
+          <path d="M72 62 Q88 62 88 78 M62 72 Q62 88 78 88"/>
+          <circle cx="88" cy="78" r="2"/>
+          <circle cx="78" cy="88" r="2"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
